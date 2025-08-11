@@ -1,0 +1,213 @@
+/* LoginRegister.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* LoginRegister.css */
+
+/* Full-page container with background image */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/loginimage.jpg'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+/* Add a slight overlay for better readability */
+.auth-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+  z-index: 0;
+}
+
+/* Ensure the login box is above the overlay */
+.auth-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  
+  overflow: hidden;
+}
+
+/* Left side content */
+.auth-left {
+  flex: 1;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #1e3a8a, #2563eb);
+  color: white;
+}
+
+/* Right side form */
+.auth-form {
+  flex: 1;
+  padding: 2rem;
+}
+
+
+.auth-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff7f7;
+}
+
+.auth-left p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Right panel for form */
+.auth-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.input-eye {
+  left: unset;
+  right: 12px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 12px 40px 12px 36px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-btn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #5848d8;
+}
+
+.auth-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  background: #ffdddd;
+  color: #b30000;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.register-prompt {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.register-prompt a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Spinner for loading */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6c63ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .auth-left {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .auth-form {
+    padding: 30px;
+  }
+}

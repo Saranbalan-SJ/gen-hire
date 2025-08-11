@@ -1,0 +1,63 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #07125E;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hexagonal login button with curved edges */
+.login-button {
+  color: #fff;
+  background-color: #00bcd4;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  clip-path: polygon(
+    20% 0%, 80% 0%,
+    100% 50%,
+    80% 100%, 20% 100%,
+    0% 50%
+  );
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.logout-button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c2185b;
+}

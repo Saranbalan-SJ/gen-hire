@@ -139,7 +139,7 @@ const ChatBot = () => {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
           border: none;
           color: white;
           font-size: 24px;

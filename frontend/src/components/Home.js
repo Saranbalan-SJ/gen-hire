@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Add this import
 import './Home.css';
 import Layout from './Layout';
+import ChatBot from './Chatbot';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -46,9 +47,9 @@ const Home = () => {
         <div className="hero-background"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">Document Similarity & Comparison</h1>
+            <h1 className="hero-title">Welcome to GenHire</h1>
             <p className="hero-subtitle">
-              Transforming complex data into insights with the power of AI-driven document analysis
+              AI Driven Recruitment Platform Designed to Streamline Your Hiring Process
             </p>
             <button 
               className="cta-button"
@@ -237,7 +238,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    
+    <ChatBot />
     </Layout>
   );
 };

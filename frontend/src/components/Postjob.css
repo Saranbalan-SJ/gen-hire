@@ -299,7 +299,8 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); */
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
   background-size: 300% 300%;
   color: white;
   padding: 1.5rem 4rem;
@@ -354,8 +355,8 @@
 
 /* Message Styling */
 .message {
-  margin: 2rem 3rem;
-  padding: 2rem;
+  /* margin: 2rem 3rem; */
+  /* padding: 2rem; */
   border-radius: 20px;
   font-weight: 600;
   text-align: center;
